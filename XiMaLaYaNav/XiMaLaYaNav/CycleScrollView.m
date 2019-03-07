@@ -47,6 +47,7 @@
             [self.imageUrlArray addObject:model.picurl];
         }
     }
+
     
     _imageViewDisplay.imageURLStringsGroup = self.imageUrlArray;
 }
