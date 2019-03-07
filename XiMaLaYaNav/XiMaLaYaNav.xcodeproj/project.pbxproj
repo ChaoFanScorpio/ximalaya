@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A13D3CDC68FC4CFEB236421C /* libPods-XiMaLaYaNav.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 112AE2A04D48F5003AAA8460 /* libPods-XiMaLaYaNav.a */; };
+		F25A4A122230F63400DC7149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A112230F63400DC7149 /* AppDelegate.m */; };
+		F25A4A152230F63400DC7149 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A142230F63400DC7149 /* ViewController.m */; };
+		F25A4A182230F63400DC7149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25A4A162230F63400DC7149 /* Main.storyboard */; };
+		F25A4A1A2230F63600DC7149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25A4A192230F63600DC7149 /* Assets.xcassets */; };
+		F25A4A1D2230F63600DC7149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25A4A1B2230F63600DC7149 /* LaunchScreen.storyboard */; };
+		F25A4A202230F63600DC7149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A1F2230F63600DC7149 /* main.m */; };
+		F25A4A282230FBB400DC7149 /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A272230FBB400DC7149 /* ModelViewController.m */; };
+		F25A4A2B2230FC5600DC7149 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A2A2230FC5600DC7149 /* HeaderView.m */; };
+		F25A4A2E2230FE1B00DC7149 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A2D2230FE1B00DC7149 /* CycleScrollView.m */; };
+		F25A4A312230FE5D00DC7149 /* BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A302230FE5C00DC7149 /* BannerModel.m */; };
+		F25A4A422230FEC800DC7149 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A362230FEC800DC7149 /* SDCycleScrollView.m */; };
+		F25A4A432230FEC800DC7149 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A372230FEC800DC7149 /* UIView+SDExtension.m */; };
+		F25A4A442230FEC800DC7149 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A382230FEC800DC7149 /* SDCollectionViewCell.m */; };
+		F25A4A452230FEC800DC7149 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A3B2230FEC800DC7149 /* TADotView.m */; };
+		F25A4A462230FEC800DC7149 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A3C2230FEC800DC7149 /* TAPageControl.m */; };
+		F25A4A472230FEC800DC7149 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A3D2230FEC800DC7149 /* TAAnimatedDotView.m */; };
+		F25A4A482230FEC800DC7149 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A3E2230FEC800DC7149 /* TAAbstractDotView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		112AE2A04D48F5003AAA8460 /* libPods-XiMaLaYaNav.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XiMaLaYaNav.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB698DFC8220DE48D08FBB6 /* Pods-XiMaLaYaNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiMaLaYaNav.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiMaLaYaNav/Pods-XiMaLaYaNav.release.xcconfig"; sourceTree = "<group>"; };
+		C131CDCD446863E97E3CC28E /* Pods-XiMaLaYaNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiMaLaYaNav.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XiMaLaYaNav/Pods-XiMaLaYaNav.debug.xcconfig"; sourceTree = "<group>"; };
+		F25A4A0D2230F63400DC7149 /* XiMaLaYaNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiMaLaYaNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25A4A102230F63400DC7149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F25A4A112230F63400DC7149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F25A4A132230F63400DC7149 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F25A4A142230F63400DC7149 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F25A4A172230F63400DC7149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F25A4A192230F63600DC7149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F25A4A1C2230F63600DC7149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F25A4A1E2230F63600DC7149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25A4A1F2230F63600DC7149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F25A4A262230FBB400DC7149 /* ModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelViewController.h; sourceTree = "<group>"; };
+		F25A4A272230FBB400DC7149 /* ModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelViewController.m; sourceTree = "<group>"; };
+		F25A4A292230FC5600DC7149 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		F25A4A2A2230FC5600DC7149 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		F25A4A2C2230FE1B00DC7149 /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
+		F25A4A2D2230FE1B00DC7149 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
+		F25A4A2F2230FE5C00DC7149 /* BannerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerModel.h; sourceTree = "<group>"; };
+		F25A4A302230FE5C00DC7149 /* BannerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerModel.m; sourceTree = "<group>"; };
+		F25A4A332230FEC800DC7149 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		F25A4A342230FEC800DC7149 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		F25A4A352230FEC800DC7149 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		F25A4A362230FEC800DC7149 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		F25A4A372230FEC800DC7149 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		F25A4A382230FEC800DC7149 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		F25A4A3A2230FEC800DC7149 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		F25A4A3B2230FEC800DC7149 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		F25A4A3C2230FEC800DC7149 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		F25A4A3D2230FEC800DC7149 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		F25A4A3E2230FEC800DC7149 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		F25A4A3F2230FEC800DC7149 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		F25A4A402230FEC800DC7149 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		F25A4A412230FEC800DC7149 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		F25A4A4C223100F400DC7149 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		F25A4A4D2231026D00DC7149 /* UtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		F25A4A4E2231026D00DC7149 /* FontAndColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F25A4A0A2230F63400DC7149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13D3CDC68FC4CFEB236421C /* libPods-XiMaLaYaNav.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6915BF8717FBC15BAED04FE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C131CDCD446863E97E3CC28E /* Pods-XiMaLaYaNav.debug.xcconfig */,
+				3CB698DFC8220DE48D08FBB6 /* Pods-XiMaLaYaNav.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9FA0D572E75BEC768909442 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112AE2A04D48F5003AAA8460 /* libPods-XiMaLaYaNav.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F25A4A042230F63400DC7149 = {
+			isa = PBXGroup;
+			children = (
+				F25A4A0F2230F63400DC7149 /* XiMaLaYaNav */,
+				F25A4A0E2230F63400DC7149 /* Products */,
+				6915BF8717FBC15BAED04FE9 /* Pods */,
+				B9FA0D572E75BEC768909442 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F25A4A0E2230F63400DC7149 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F25A4A0D2230F63400DC7149 /* XiMaLaYaNav.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F25A4A0F2230F63400DC7149 /* XiMaLaYaNav */ = {
+			isa = PBXGroup;
+			children = (
+				F25A4A4E2231026D00DC7149 /* FontAndColorMacros.h */,
+				F25A4A4D2231026D00DC7149 /* UtilsMacros.h */,
+				F25A4A102230F63400DC7149 /* AppDelegate.h */,
+				F25A4A112230F63400DC7149 /* AppDelegate.m */,
+				F25A4A132230F63400DC7149 /* ViewController.h */,
+				F25A4A142230F63400DC7149 /* ViewController.m */,
+				F25A4A292230FC5600DC7149 /* HeaderView.h */,
+				F25A4A2A2230FC5600DC7149 /* HeaderView.m */,
+				F25A4A2C2230FE1B00DC7149 /* CycleScrollView.h */,
+				F25A4A2D2230FE1B00DC7149 /* CycleScrollView.m */,
+				F25A4A2F2230FE5C00DC7149 /* BannerModel.h */,
+				F25A4A302230FE5C00DC7149 /* BannerModel.m */,
+				F25A4A322230FEC800DC7149 /* SDCycleScrollView */,
+				F25A4A262230FBB400DC7149 /* ModelViewController.h */,
+				F25A4A272230FBB400DC7149 /* ModelViewController.m */,
+				F25A4A162230F63400DC7149 /* Main.storyboard */,
+				F25A4A192230F63600DC7149 /* Assets.xcassets */,
+				F25A4A1B2230F63600DC7149 /* LaunchScreen.storyboard */,
+				F25A4A1E2230F63600DC7149 /* Info.plist */,
+				F25A4A1F2230F63600DC7149 /* main.m */,
+				F25A4A4C223100F400DC7149 /* Prefix.pch */,
+			);
+			path = XiMaLaYaNav;
+			sourceTree = "<group>";
+		};
+		F25A4A322230FEC800DC7149 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F25A4A332230FEC800DC7149 /* UIView+SDExtension.h */,
+				F25A4A342230FEC800DC7149 /* SDCycleScrollView.h */,
+				F25A4A352230FEC800DC7149 /* SDCollectionViewCell.h */,
+				F25A4A362230FEC800DC7149 /* SDCycleScrollView.m */,
+				F25A4A372230FEC800DC7149 /* UIView+SDExtension.m */,
+				F25A4A382230FEC800DC7149 /* SDCollectionViewCell.m */,
+				F25A4A392230FEC800DC7149 /* PageControl */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		F25A4A392230FEC800DC7149 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				F25A4A3A2230FEC800DC7149 /* TAAbstractDotView.h */,
+				F25A4A3B2230FEC800DC7149 /* TADotView.m */,
+				F25A4A3C2230FEC800DC7149 /* TAPageControl.m */,
+				F25A4A3D2230FEC800DC7149 /* TAAnimatedDotView.m */,
+				F25A4A3E2230FEC800DC7149 /* TAAbstractDotView.m */,
+				F25A4A3F2230FEC800DC7149 /* TADotView.h */,
+				F25A4A402230FEC800DC7149 /* TAAnimatedDotView.h */,
+				F25A4A412230FEC800DC7149 /* TAPageControl.h */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F25A4A0C2230F63400DC7149 /* XiMaLaYaNav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25A4A232230F63600DC7149 /* Build configuration list for PBXNativeTarget "XiMaLaYaNav" */;
+			buildPhases = (
+				37B25D4E744A9B6B01E49E05 /* [CP] Check Pods Manifest.lock */,
+				F25A4A092230F63400DC7149 /* Sources */,
+				F25A4A0A2230F63400DC7149 /* Frameworks */,
+				F25A4A0B2230F63400DC7149 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XiMaLaYaNav;
+			productName = XiMaLaYaNav;
+			productReference = F25A4A0D2230F63400DC7149 /* XiMaLaYaNav.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F25A4A052230F63400DC7149 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = zhangdechou;
+				TargetAttributes = {
+					F25A4A0C2230F63400DC7149 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F25A4A082230F63400DC7149 /* Build configuration list for PBXProject "XiMaLaYaNav" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F25A4A042230F63400DC7149;
+			productRefGroup = F25A4A0E2230F63400DC7149 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F25A4A0C2230F63400DC7149 /* XiMaLaYaNav */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F25A4A0B2230F63400DC7149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25A4A1D2230F63600DC7149 /* LaunchScreen.storyboard in Resources */,
+				F25A4A1A2230F63600DC7149 /* Assets.xcassets in Resources */,
+				F25A4A182230F63400DC7149 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37B25D4E744A9B6B01E49E05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XiMaLaYaNav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F25A4A092230F63400DC7149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25A4A2E2230FE1B00DC7149 /* CycleScrollView.m in Sources */,
+				F25A4A282230FBB400DC7149 /* ModelViewController.m in Sources */,
+				F25A4A2B2230FC5600DC7149 /* HeaderView.m in Sources */,
+				F25A4A482230FEC800DC7149 /* TAAbstractDotView.m in Sources */,
+				F25A4A442230FEC800DC7149 /* SDCollectionViewCell.m in Sources */,
+				F25A4A152230F63400DC7149 /* ViewController.m in Sources */,
+				F25A4A462230FEC800DC7149 /* TAPageControl.m in Sources */,
+				F25A4A432230FEC800DC7149 /* UIView+SDExtension.m in Sources */,
+				F25A4A202230F63600DC7149 /* main.m in Sources */,
+				F25A4A312230FE5D00DC7149 /* BannerModel.m in Sources */,
+				F25A4A472230FEC800DC7149 /* TAAnimatedDotView.m in Sources */,
+				F25A4A452230FEC800DC7149 /* TADotView.m in Sources */,
+				F25A4A122230F63400DC7149 /* AppDelegate.m in Sources */,
+				F25A4A422230FEC800DC7149 /* SDCycleScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F25A4A162230F63400DC7149 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25A4A172230F63400DC7149 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F25A4A1B2230F63600DC7149 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25A4A1C2230F63600DC7149 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F25A4A212230F63600DC7149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F25A4A222230F63600DC7149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F25A4A242230F63600DC7149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C131CDCD446863E97E3CC28E /* Pods-XiMaLaYaNav.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/Prefix.pch";
+				INFOPLIST_FILE = XiMaLaYaNav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cfz.XiMaLaYaNav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F25A4A252230F63600DC7149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB698DFC8220DE48D08FBB6 /* Pods-XiMaLaYaNav.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/Prefix.pch";
+				INFOPLIST_FILE = XiMaLaYaNav/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cfz.XiMaLaYaNav;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F25A4A082230F63400DC7149 /* Build configuration list for PBXProject "XiMaLaYaNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25A4A212230F63600DC7149 /* Debug */,
+				F25A4A222230F63600DC7149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25A4A232230F63600DC7149 /* Build configuration list for PBXNativeTarget "XiMaLaYaNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25A4A242230F63600DC7149 /* Debug */,
+				F25A4A252230F63600DC7149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F25A4A052230F63400DC7149 /* Project object */;
+}
