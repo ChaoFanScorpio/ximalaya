@@ -126,7 +126,9 @@
         self.arrHeaderDatas = [[NSMutableArray alloc] initWithObjects:info1, info2, info3, info4, info5, nil];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-           self.homeHeader.arrHeaderDatas = self.arrHeaderDatas;
+            self.homeHeader.arrHeaderDatas = self.arrHeaderDatas;
+            self.topBackgroundView.backgroundColor = info1.themeColor;
+            self.homeHeader.turnOnTheCarousel = YES;
         });
     });
     

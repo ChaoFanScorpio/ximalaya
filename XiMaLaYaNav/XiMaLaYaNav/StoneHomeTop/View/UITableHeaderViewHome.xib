@@ -30,18 +30,28 @@
                         <outlet property="delegate" destination="iN0-l3-epB" id="Gof-nR-rEs"/>
                     </connections>
                 </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t6i-Dg-hRK">
+                    <rect key="frame" x="16" y="107" width="343" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="PJv-d5-Zeo"/>
+                    </constraints>
+                </pageControl>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="t6i-Dg-hRK" secondAttribute="bottom" constant="6" id="3UI-yH-8ed"/>
                 <constraint firstItem="0tP-Xt-cvk" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Rhg-bx-P0H"/>
                 <constraint firstItem="0tP-Xt-cvk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ew8-3B-XtH"/>
+                <constraint firstItem="t6i-Dg-hRK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="nj5-Yp-geP"/>
                 <constraint firstItem="0tP-Xt-cvk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="slm-et-Ymk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t6i-Dg-hRK" secondAttribute="trailing" constant="16" id="vsx-FB-Ach"/>
                 <constraint firstItem="0tP-Xt-cvk" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="zgi-Mb-jsg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="collectionView" destination="0tP-Xt-cvk" id="nye-Yw-zyg"/>
+                <outlet property="pageControl" destination="t6i-Dg-hRK" id="4zo-cV-vLi"/>
             </connections>
             <point key="canvasLocation" x="138.40000000000001" y="153.82308845577214"/>
         </view>

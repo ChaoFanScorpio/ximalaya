@@ -15,6 +15,10 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+
+@property (nonatomic, strong) NSTimer *timer;
+
 @end
 
 @implementation UITableHeaderViewHome
@@ -36,6 +40,47 @@
 {
     [self.collectionView registerNib:UICellHomeHeaderItem.jk_loadNib
           forCellWithReuseIdentifier:UICellHomeHeaderItem.jk_className];
+}
+
+- (NSIndexPath *)currIndexPath
+{
+    CGPoint centerPoint = [self convertPoint:self.collectionView.center toView:self.collectionView];
+    return [self.collectionView indexPathForItemAtPoint:centerPoint];
+}
+
+- (void)collectionviewScrollToNextItem
+{
+    NSIndexPath *currIndexPath = [self currIndexPath];
+    
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:currIndexPath.row + 1 inSection:currIndexPath.section] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+        [self adjustTheCurrentDisplayCellAndPageControl];
+    });
+}
+
+- (void)adjustTheCurrentDisplayCellAndPageControl
+{
+    NSIndexPath *currIndexPath = [self currIndexPath];
+    
+    if (currIndexPath.row == 0) {
+        
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:self.arrHeaderDatas.count - 2 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        
+        self.pageControl.currentPage = self.arrHeaderDatas.count - 3;
+        
+    }
+    else if (currIndexPath.row == self.arrHeaderDatas.count - 1) {
+        
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        
+        self.pageControl.currentPage = 0;
+    }
+    else{
+        self.pageControl.currentPage = currIndexPath.row - 1;
+    }
 }
 
 - (UIColor *)getColorOfContentOffset
@@ -90,14 +135,60 @@
     return components[2];
 }
 
+- (void)startTimer
+{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:4 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        
+        if (self.turnOnTheCarousel) {
+            
+            [self collectionviewScrollToNextItem];
+        }
+    }];
+}
+
+- (void)stopTimer
+{
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
 #pragma mark - Getter & Setter
+
 - (void)setArrHeaderDatas:(NSMutableArray<ModelHomeToppingInfo *> *)arrHeaderDatas
 {
     if (_arrHeaderDatas != arrHeaderDatas) {
         _arrHeaderDatas = arrHeaderDatas;
     }
     
-    [self.collectionView reloadData];
+    if (_arrHeaderDatas.count > 0) {
+        
+        self.pageControl.numberOfPages = _arrHeaderDatas.count;
+        
+        ModelHomeToppingInfo *firstModel = _arrHeaderDatas.firstObject;
+        ModelHomeToppingInfo *lastModel = _arrHeaderDatas.lastObject;
+        
+        [_arrHeaderDatas insertObject:lastModel atIndex:0];
+        [_arrHeaderDatas addObject:firstModel];
+        
+        [self.collectionView reloadData];
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    }else{
+        
+        self.pageControl.numberOfPages = 0;
+        [self.collectionView reloadData];
+    }
+}
+
+- (void)setTurnOnTheCarousel:(BOOL)turnOnTheCarousel
+{
+    _turnOnTheCarousel = turnOnTheCarousel;
+    
+    if (_turnOnTheCarousel) {
+        [self startTimer];
+    }else{
+        [self stopTimer];
+    }
+    
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -117,6 +208,7 @@ int numberOfTriggers = 0;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    
     numberOfTriggers++;
     
     if (numberOfTriggers % kIntervalNumber != 0) {
@@ -132,6 +224,11 @@ int numberOfTriggers = 0;
     if (currColor && self.changeBackgroundColorCallback) {
         self.changeBackgroundColorCallback(self, currColor);
     }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self adjustTheCurrentDisplayCellAndPageControl];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
