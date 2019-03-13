@@ -16,6 +16,8 @@
 		673E4CD52232007F00F6D78D /* ModelHomeToppingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 673E4CD42232007F00F6D78D /* ModelHomeToppingInfo.m */; };
 		67B1B09322315DD7003A356C /* UIControllerHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B1B09222315DD7003A356C /* UIControllerHome.m */; };
 		A13D3CDC68FC4CFEB236421C /* libPods-XiMaLaYaNav.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 112AE2A04D48F5003AAA8460 /* libPods-XiMaLaYaNav.a */; };
+		F214A4E522364AC80033E663 /* HomeNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = F214A4E422364AC80033E663 /* HomeNavView.m */; };
+		F214A4E722364ACF0033E663 /* HomeNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F214A4E622364ACF0033E663 /* HomeNavView.xib */; };
 		F25A4A122230F63400DC7149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A112230F63400DC7149 /* AppDelegate.m */; };
 		F25A4A152230F63400DC7149 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25A4A142230F63400DC7149 /* ViewController.m */; };
 		F25A4A182230F63400DC7149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25A4A162230F63400DC7149 /* Main.storyboard */; };
@@ -52,6 +54,9 @@
 		67B1B09122315DD7003A356C /* UIControllerHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIControllerHome.h; sourceTree = "<group>"; };
 		67B1B09222315DD7003A356C /* UIControllerHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIControllerHome.m; sourceTree = "<group>"; };
 		C131CDCD446863E97E3CC28E /* Pods-XiMaLaYaNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiMaLaYaNav.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XiMaLaYaNav/Pods-XiMaLaYaNav.debug.xcconfig"; sourceTree = "<group>"; };
+		F214A4E322364AC80033E663 /* HomeNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNavView.h; sourceTree = "<group>"; };
+		F214A4E422364AC80033E663 /* HomeNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNavView.m; sourceTree = "<group>"; };
+		F214A4E622364ACF0033E663 /* HomeNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNavView.xib; sourceTree = "<group>"; };
 		F25A4A0D2230F63400DC7149 /* XiMaLaYaNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiMaLaYaNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25A4A102230F63400DC7149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F25A4A112230F63400DC7149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -162,6 +167,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F214A4DF22364A250033E663 /* ZdcHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				F214A4E222364A4E0033E663 /* Controller */,
+				F214A4E122364A480033E663 /* Model */,
+				F214A4E022364A400033E663 /* View */,
+			);
+			path = ZdcHomeView;
+			sourceTree = "<group>";
+		};
+		F214A4E022364A400033E663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F214A4E322364AC80033E663 /* HomeNavView.h */,
+				F214A4E422364AC80033E663 /* HomeNavView.m */,
+				F214A4E622364ACF0033E663 /* HomeNavView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F214A4E122364A480033E663 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F214A4E222364A4E0033E663 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F25A4A042230F63400DC7149 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +222,7 @@
 		F25A4A0F2230F63400DC7149 /* XiMaLaYaNav */ = {
 			isa = PBXGroup;
 			children = (
+				F214A4DF22364A250033E663 /* ZdcHomeView */,
 				673663DA22316083008B487A /* StoneHomeTop */,
 				F25A4A4E2231026D00DC7149 /* FontAndColorMacros.h */,
 				F25A4A4D2231026D00DC7149 /* UtilsMacros.h */,
@@ -298,6 +338,7 @@
 			files = (
 				F25A4A1D2230F63600DC7149 /* LaunchScreen.storyboard in Resources */,
 				673E4CCD2231FA8900F6D78D /* UITableHeaderViewHome.xib in Resources */,
+				F214A4E722364ACF0033E663 /* HomeNavView.xib in Resources */,
 				673E4CD22231FD6800F6D78D /* UICellHomeHeaderItem.xib in Resources */,
 				673663E4223166CE008B487A /* UIViewHomeNav.xib in Resources */,
 				F25A4A1A2230F63600DC7149 /* Assets.xcassets in Resources */,
@@ -350,6 +391,7 @@
 				F25A4A452230FEC800DC7149 /* TADotView.m in Sources */,
 				F25A4A122230F63400DC7149 /* AppDelegate.m in Sources */,
 				673E4CCB2231FA7B00F6D78D /* UITableHeaderViewHome.m in Sources */,
+				F214A4E522364AC80033E663 /* HomeNavView.m in Sources */,
 				673E4CD52232007F00F6D78D /* ModelHomeToppingInfo.m in Sources */,
 				F25A4A422230FEC800DC7149 /* SDCycleScrollView.m in Sources */,
 			);
