@@ -85,6 +85,7 @@
 
 - (UIColor *)getColorOfContentOffset
 {
+    
     NSInteger leftIndex = (self.collectionView.contentOffset.x) / self.jk_width;
     NSInteger rightIndex = leftIndex + 1;
     
@@ -102,6 +103,7 @@
     ModelHomeToppingInfo *leftInof = self.arrHeaderDatas[leftIndex];
     ModelHomeToppingInfo *rightInof = self.arrHeaderDatas[rightIndex];
     
+    NSLog(@"scrollView = %f",offsetXProportion);
     double leftRed = [self redValueWithColor:leftInof.themeColor];
     double rithtRed = [self redValueWithColor:rightInof.themeColor];
     double red = (rithtRed - leftRed) * offsetXProportion + leftRed;
