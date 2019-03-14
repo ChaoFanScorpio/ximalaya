@@ -208,7 +208,6 @@ int numberOfTriggers = 0;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
     numberOfTriggers++;
     
     if (numberOfTriggers % kIntervalNumber != 0) {
